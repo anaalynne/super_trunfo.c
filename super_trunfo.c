@@ -114,7 +114,35 @@ printf("\n=========================================\n\n");
     printf ("O número de ponto turísticos da carta 2 vence, %d\n", pontos_turisticos2 > pontos_turisticos1);
     printf ("A densidade da carta 1 venceu,%d\n", densidadePopulacional1 < densidadePopulacional2);
 
+//Comparação das duas cartas usando if-else- Populção
+
+if(populacao1>populacao2){
+    printf("A carta 1 venceu com a maior população!\n");
+}else{
+    printf("A carta 2 venceu com a maior população!\n");
+}
+//Comparação das duas cartas usando if-else- Área: hab/km²
+if(area1>area2){
+    printf("A carta 1 venceu com a maior área!\n");
+}else{
+    printf("A carta 2 venceu com a maior área!\n");
+}
+//Comparação das duas cartas usando if-else- PIB das cidades
+if(pib1>pib2){
+    printf("A carta 1 venceu com o maior PIB!\n");
+}else{
+    printf("A carta 2 venceu com o maior PIB!\n");
+}
+
+//Comparação das duas cartas usando if-else- número de pontos turísticos
+if(pontos_turisticos1>pontos_turisticos2){
+    printf("A carta 1 venceu com a maior quantidade de pontos turísticos!\n");
+}else{
+    printf("A carta 2 venceu com a maior quantidade de pontos turísticos!!\n");
+}    
+    
 
 return 0;
 
 }
+
