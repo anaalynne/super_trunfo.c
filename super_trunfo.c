@@ -85,6 +85,10 @@ printf("\n=========================================\n\n");
 
 // ================= MENU =================
     int opcao;
+    int atributo1, atributo2;
+    float valor1_carta1, valor1_carta2;
+    float valor2_carta1, valor2_carta2;
+    float soma1, soma2;
 
     printf("\n========== MENU ==========\n");
     printf("1 - Mostrar Carta 1\n");
@@ -153,6 +157,28 @@ printf("\n=========================================\n\n");
                 printf("Carta 2 vence em Densidade Populacional\n");
 
             break;
+        case 4:
+            // Escolha do primeiro atributo
+            printf("\nEscolha o primeiro atributo para comparar:\n");
+            printf("1 - Populacao\n");
+            printf("2 - Area\n");
+            printf("3 - PIB\n");
+            printf("4 - Pontos Turisticos\n");
+            printf("5 - Densidade Populacional\n");
+            printf("6 - PIB per Capita\n");
+            printf("Opcao: ");
+            scanf("%d", &atributo1);
+
+    
+
+            // Soma dos valores
+            soma1 = valor1_carta1 + valor2_carta1;
+            soma2 = valor1_carta2 + valor2_carta2;
+
+            printf("\n--- RESULTADO FINAL ---\n");
+            if (soma1 > soma2) printf("Carta 1 vence a rodada!\n");
+            else if (soma2 > soma1) printf("Carta 2 vence a rodada!\n");
+            else printf("Empate!\n");
 
         case 0:
             printf("Jogo finalizado.\n");
@@ -164,6 +190,7 @@ printf("\n=========================================\n\n");
 
     return 0;
 }
+
 
 
 
