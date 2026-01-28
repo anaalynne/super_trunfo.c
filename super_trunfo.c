@@ -131,30 +131,22 @@ printf("\n=========================================\n\n");
         case 3:
             printf("\n--- COMPARACAO ---\n");
 
-            if(populacao1 > populacao2)
-                printf("Carta 1 vence em Populacao\n");
-            else
-                printf("Carta 2 vence em Populacao\n");
+    printf("%s vence em Populacao\n",
+           (populacao1 > populacao2) ? "Carta 1" : "Carta 2");
 
-            if(area1 > area2)
-                printf("Carta 1 vence em Area\n");
-            else
-                printf("Carta 2 vence em Area\n");
+    printf("%s vence em Area\n",
+           (area1 > area2) ? "Carta 1" : "Carta 2");
 
-            if(pib1 > pib2)
-                printf("Carta 1 vence em PIB\n");
-            else
-                printf("Carta 2 vence em PIB\n");
+    printf("%s vence em PIB\n",
+           (pib1 > pib2) ? "Carta 1" : "Carta 2");
 
-            if(pontos_turisticos1 > pontos_turisticos2)
-                printf("Carta 1 vence em Pontos Turisticos\n");
-            else
-                printf("Carta 2 vence em Pontos Turisticos\n");
+    printf("%s vence em Pontos Turisticos\n",
+           (pontos_turisticos1 > pontos_turisticos2) ? "Carta 1" : "Carta 2");
 
-            if(densidadePopulacional1 < densidadePopulacional2)
-                printf("Carta 1 vence em Densidade Populacional\n");
-            else
-                printf("Carta 2 vence em Densidade Populacional\n");
+    printf("%s vence em Densidade Populacional\n",
+           (densidadePopulacional1 < densidadePopulacional2) ? "Carta 1" : "Carta 2");
+
+    break;
 
             break;
         case 4:
@@ -190,6 +182,7 @@ printf("\n=========================================\n\n");
 
     return 0;
 }
+
 
 
 
